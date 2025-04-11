@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+.card-title-1 {
+    @apply text-gray-400
+}
+
+ 
+
+html{
+    @apply text-gray-800
+}
+
+h1{
+    @apply text-lg tracking-wide font-semibold text-gray-600
+}
+
+::placeholder{
+    @apply text-gray-300
+}
+
+th {
+    @apply border-b border-gray-100 p-4 pt-0 pb-3 pl-8 text-left font-medium text-gray-600 dark:border-gray-300 dark:text-gray-400
+}
+
+td {
+    @apply border-b border-gray-100 p-4 pl-8 text-gray-500 dark:border-gray-300 dark:text-gray-500
+}
+
+tr:nth-child(odd) {
+    @apply bg-white
+}
+
+tr:nth-child(even) {
+    @apply bg-gray-50
+}
