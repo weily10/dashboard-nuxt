@@ -6,6 +6,6 @@
 
 <template>
     <div>
-        <h1 class="mb-3"> prfile </h1>
+        <h1 class="mb-3"> profile </h1>
     </div>
 </template>
