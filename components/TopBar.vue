@@ -10,11 +10,18 @@ const handleFocusOut = (event) => {
     }
 };
 
+const emit = defineEmits(['showMenu'])
+
 </script>
 
 <template>
     <div class="w-full h-[4rem] border-b border-gray-200 flex justify-between place-items-center px-3 bg-white">
-        <Input placeholder="search" />
+        <button type="button" class="rounded-full  cursor-pointer me-2 lg:hidden" @click="emit('showMenu')">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        <Input placeholder="search" class="me-2" />
         <div class="relative " @focusout="handleFocusOut">
             <div class="rounded-full flex justify-center items-center bg-purple-700 w-[40px] h-[40px] p-1 text-white cursor-pointer"
                 @click="isOpen = !isOpen">

@@ -4,7 +4,7 @@
 
 // const pinia = createPinia()
 // const store = useCounterStore(pinia)
-
+const isOpen = ref(false)
 const menuItems = ref([
 
   {
@@ -34,6 +34,13 @@ const menuItems = ref([
 ]);
 
 
+function showMenu() {
+  isOpen.value = !isOpen.value
+
+  console.log(isOpen.value);
+}
+
+
 function handleClick() {
   // store.setTitle('Home')
 }
@@ -41,19 +48,27 @@ function handleClick() {
 
 <template>
   <div class="flex">
-    <div class="px-3 pt-3 border-r border-gray-200 w-[260px]  h-[100vh] ">
-      <div class="font-bold  p-3 border-b-1 border-gray-200 text-purple-700 mr-3 text-center cursor-pointer">
-        <NuxtLink to="/" @click.prevent="handleClick()">
-          NxTDash
-        </NuxtLink>
+    <div class="px-3 pt-3 border-r border-gray-200 w-[260px]  h-[100vh] bg-white lg:hidden  max-lg:absolute" v-show="isOpen">
+      <div class="flex border-b-1 border-gray-200 justify-between">
+        <div class="font-bold  p-3 text-purple-700 mr-3 text-center cursor-pointer">
+          <NuxtLink to="/" @click.prevent="handleClick()">
+            NxTDash
+          </NuxtLink>
+        </div>
+        <button type="button" class="btn cursor-pointer rounded-full px-1 flex items-center hover:bg-gray-200 h-[2rem]" @click="isOpen = !isOpen">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
       </div>
       <div v-for="(item, index) in menuItems" :key="index" class="pl-3">
         <MenuItem :item="item" :index="index" :level="0">
         </MenuItem>
       </div>
     </div>
+
     <div class="grow  bg-gray-50">
-      <TopBar></TopBar>
+      <TopBar @showMenu="showMenu"></TopBar>
       <div class="px-5 py-3 ">
         <slot />
       </div>

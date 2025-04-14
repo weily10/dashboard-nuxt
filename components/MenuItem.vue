@@ -64,7 +64,7 @@ onMounted(() => {
   <div class="cursor-pointer flex justify-between  hover:text-purple-700  place-items-center h-[3rem]"
     @click="openMenu(props.index, props.level)">
     <NuxtLink v-if="props.item.link" :to="props.item.link"
-      class="w-[220px] block h-[3rem] flex place-items-center duration-300 rounded-md px-3"
+      class="w-[260px] block h-[3rem] flex place-items-center duration-300 rounded-md px-3"
       :class="isActive(props.item.link) ? 'bg-purple-700  text-white hover:text-white rounded-md  ' : ''">
       {{ props.item.title }}
     </NuxtLink>

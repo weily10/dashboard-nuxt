@@ -2,7 +2,7 @@
 import { useHead } from '@unhead/vue';
 import { onMounted } from 'vue';
 const route = useRoute()
-
+ 
  
 
 onMounted(()=>{
