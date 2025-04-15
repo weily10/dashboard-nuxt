@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="p-5   rounded-lg   border border-gray-200 bg-white grow">
+    <div class="w-full p-5 rounded-lg border border-gray-200 bg-white  ">
         <slot>
             <div>
                 <div class=" text-white w-100">

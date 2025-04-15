@@ -27,7 +27,7 @@ const emit = defineEmits(['showMenu'])
                 @click="isOpen = !isOpen">
                 W
             </div>
-            <div v-if="isOpen"
+            <div v-show="isOpen"
                 class="absolute w-50  top-full mt-2 p-3 bg-white shadow-sm shadow-md rounded transform -translate-x-[90%] text-sm"
                 tabindex="0">
                 <div>

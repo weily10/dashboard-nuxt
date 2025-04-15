@@ -14,12 +14,12 @@ const model = defineModel('model')
 </script>
 
 <template>
-    <div class=" max-w-[460px]  grow-1">
+    <div class="max-w-[460px]  grow-1">
         <label class="text-sm text-gray-600 ">
             {{ label }}<span v-if="isRequired" class="text-red-800"> *</span>
         </label>
         <input :type="type"
-            class="w-full min-w-0 grow py-1.5 p-3  text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 border border-gray-200 rounded-sm "
+            class="w-full  grow py-1.5 p-3  text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 border border-gray-200 rounded-sm "
             :placeholder="placeholder" v-model="model" min="0">
     </div>
 </template>

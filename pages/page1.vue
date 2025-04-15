@@ -36,9 +36,9 @@ const articleTableData = ref([{
             <div class="flex gap-3 flex-wrap w-full">
                 <Input label="主題名稱" :isRequired="true" placeholder="主題名稱" v-model:model="modelTheme"></Input>
                 <Input label="編號查詢" :isRequired="true" placeholder="編號查詢" v-model:model="numberSearch"></Input>
-                <div class="flex items-center  md:w-1/2">
+                <div class="flex items-center flex-wrap ">
                     <Input type="number" label="最大值" :isRequired="false" placeholder="最大值" v-model:model="highest"></Input>
-                    <div class="mt-5 px-1">~</div>
+                    <div class="mt-5 px-1" >~</div>
                     <Input type="number" label="最小值" :isRequired="false" placeholder="最小值" v-model:model="lowest"></Input>
                 </div>
 
@@ -49,8 +49,8 @@ const articleTableData = ref([{
                 </div>
             </div>
         </Card>
-        <div class="flex gap-3 flex-wrap mt-4">
-            <div class="bg-white p-3 border border-gray-200 w-full rounded-lg ">
+        <div class=" mt-4 overflow-x-auto">
+            <div class="bg-white p-3 border border-gray-200 w-full rounded-lg  ">
                 <table class="table table-auto  border-gray-200 w-full">
                     <thead>
                         <tr>
