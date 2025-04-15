@@ -14,7 +14,7 @@ const model = defineModel('model')
 </script>
 
 <template>
-    <div class="max-w-[460px]  grow-1">
+    <div class="  grow-1">
         <label class="text-sm text-gray-600 ">
             {{ label }}<span v-if="isRequired" class="text-red-800"> *</span>
         </label>

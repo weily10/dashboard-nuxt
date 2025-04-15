@@ -56,8 +56,8 @@ function handleClick() {
 </script>
 
 <template>
-  <div class=" ">
-    <aside class="px-3 border-r border-gray-200 w-[260px]  h-[100vh] bg-white max-lg:z-100  lg:hidden max-lg:absolute "
+  <div class="h-[100vh]">
+    <aside class=" px-3 border-r border-gray-200 w-[260px]  h-full bg-white max-lg:z-100  lg:hidden max-lg:absolute "
       :class="showMenu()">
       <div class="p-3 flex border-b-1 border-gray-200 justify-between items-center">
         <div class="font-bold  p-3 text-purple-700 mr-3 text-center cursor-pointer">
@@ -92,7 +92,7 @@ function handleClick() {
       </div>
     </aside>
 
-    <div class="grow  bg-gray-50 min-lg:ps-[260px]">
+    <div class="grow  bg-gray-50 min-lg:ps-[260px] h-[100vh]">
       <TopBar @showMenu="isOpen = !isOpen"></TopBar>
       <div class="px-5 py-3 ">
         <slot />
@@ -103,4 +103,7 @@ function handleClick() {
 </template>
 
 
-<style scoped></style>
+<style scoped>
+ 
+
+</style>

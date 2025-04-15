@@ -34,10 +34,9 @@ const emit = defineEmits(['showMenu'])
                     <h1 class="flex flex-wrap ">
                         Profile Info
                     </h1>
-                    <hr class="border-gray-200">
-                    <div>
-                        desc
-
+                    <hr class="border-gray-200 mt-3">
+                    <div class="mt-3">
+                        <p class="text-gray-500">王小明</p>
                     </div>
                 </div>
 
