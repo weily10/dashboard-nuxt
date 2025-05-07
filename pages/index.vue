@@ -13,16 +13,16 @@ definePageMeta({
 <template>
     <div>
         <h1 class="mb-3"> </h1>
-        <div class="grid grid-flow-col grid-rows-4 gap-3">
+        <div class="grid grid-flow-col gap-3 ">
             <Card>
                 <div class="flex justify-center flex-col items-center gap-2">
                     <h4 class="flex  items-center justify-content-center">
                         <span class=" rounded-full bg-red-800 w-[0.5rem] h-[0.5rem]">
                         </span>
-                        <span class="ps-2">手機完成驗證數
+                        <span class="ps-2 card-title-1">手機完成驗證數
                         </span>
                     </h4>
-                    <div class="text-2xl">
+                    <div class="text-3xl">
                         3,658.7萬
                     </div>
                     <div class="text-danger mt-3 ">
