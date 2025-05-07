@@ -1,6 +1,7 @@
 <script setup >
 const route = useRoute()
 
+const { user, clear: clearSession } = useUserSession()
 
 
 const isOpen = ref(false);
@@ -11,6 +12,11 @@ const handleFocusOut = (event) => {
 };
 
 const emit = defineEmits(['showMenu'])
+
+async function logout() {
+  await clearSession()
+  await navigateTo('/login')
+}
 
 </script>
 
@@ -39,7 +45,9 @@ const emit = defineEmits(['showMenu'])
                         <p class="text-gray-500">王小明</p>
                     </div>
                 </div>
-
+                <div class="mt-3">
+                    <Button label="logout" @onClick="logout"></Button>
+                </div>
             </div>
         </div>
     </div>

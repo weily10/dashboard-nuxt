@@ -6,10 +6,10 @@
     <div class="w-full p-5 rounded-lg border border-gray-200 bg-white  ">
         <slot>
             <div>
-                <div class=" text-white w-100">
+                <div class=" text-white">
                     <h3 class="card-title-1  ">有效會員數
                     </h3>
-                    <div class="  right-0 top-0 p-3">
+                    <div class="top-0 p-3">
                         <div class="rounded-full flex justify-center items-center bg-red-700 w-[40px] h-[40px] p-1  ">
                             W
                         </div>

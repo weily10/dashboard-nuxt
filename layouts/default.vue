@@ -5,6 +5,9 @@ import { ref, watchEffect } from 'vue';
 
 // const pinia = createPinia()
 // const store = useCounterStore(pinia)
+
+  
+  
 const viewPortWidth = ref(false)
 const isOpen = ref(false)
 const menuItems = ref([
@@ -53,6 +56,8 @@ function showMenu() {
 function handleClick() {
   // store.setTitle('Home')
 }
+
+
 </script>
 
 <template>
