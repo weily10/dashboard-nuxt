@@ -7,8 +7,10 @@
 <template>
     <div>
         <h1 class="mb-3"> profile </h1>
-        <Card>
-            <Stepper></Stepper>
+        <Stepper></Stepper>
+        
+        <Card class="mt-3">
+           
         </Card>
        
     </div>

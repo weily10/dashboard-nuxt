@@ -15,8 +15,8 @@ definePageMeta({
         <h1 class="mb-3"> </h1>
         <div class="grid grid-flow-col gap-3 ">
             <Card>
-                <div class="flex justify-center flex-col items-center gap-2">
-                    <h4 class="flex  items-center justify-content-center">
+                <div class="flex justify-between flex-col items-center gap-2">
+                    <h4 class="flex  items-center  ">
                         <span class=" rounded-full bg-red-800 w-[0.5rem] h-[0.5rem]">
                         </span>
                         <span class="ps-2 card-title-1">手機完成驗證數
