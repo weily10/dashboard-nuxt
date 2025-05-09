@@ -7,5 +7,9 @@
 <template>
     <div>
         <h1 class="mb-3"> profile </h1>
+        <Card>
+            <Stepper></Stepper>
+        </Card>
+       
     </div>
 </template>

@@ -30,8 +30,8 @@ const menuItems = ref([
       {
         title: "Security",
         subchildren: [
-          { title: "Change Password", link: "/page3" },
-          { title: "2FA Settings", link: "/page2" },
+          { title: "Change Password", link: "/settings/security/page3" },
+          { title: "2FA Settings", link: "/settings/security/page2" },
         ],
       },
     ],

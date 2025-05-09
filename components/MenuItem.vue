@@ -14,10 +14,6 @@ const props = defineProps({
 });
 const isOpen = ref(false);
 
-
-
-
-
 function isActive(link) {
 
   return route.path === link
