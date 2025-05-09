@@ -28,7 +28,7 @@ onMounted(() => {
             <div class="cursor-pointer  text-center " @click="onclick(i.no)">
                 <div class="flex items-center whitespace-nowrap ">
                     <span :class="active[i.no]"
-                        class="transition delay-150 duration-300 ease-in-out  w-7 h-7 bg-gray-200  rounded-full flex justify-center items-center mx-3 text-sm  lg:w-10 lg:h-10" >
+                        class="transition  duration-300 ease-in-out  w-7 h-7 bg-gray-200  rounded-full flex justify-center items-center mx-3 text-sm  sm:w-10 sm:h-10">
                         {{ i.no }}
                     </span>
                 </div>
@@ -36,8 +36,13 @@ onMounted(() => {
                     {{ i.desc }}
                 </span>
             </div>
-            <div class="w-50 relative pb-3" v-show="steps.length !== i.no" >
-                 <hr class="h-px my-8 bg-gray-200 border-0  " >
+            <div class="w-full   pb-3 relative" v-show="steps.length !== i.no">
+                <hr class="h-px my-8 bg-gray-200 border-0 w-1 absolute"
+                    :class="active[i.no + 1] ? 'transition-all duration-300 ease-in-out w-full bg-purple-500' : ''">
+                <hr class="h-px my-8 bg-gray-200 border-0  w-full" style="z-index:1 !important">
+               
+              
+
             </div>
         </template>
     </div>

@@ -34,7 +34,7 @@ async function logout() {
                 W
             </div>
             <div v-show="isOpen"
-                class="absolute w-50  top-full mt-2 p-3 bg-white shadow-sm shadow-md rounded transform -translate-x-[90%] text-sm"
+                class="absolute w-50  top-full mt-2 p-3 bg-white shadow-sm shadow-md rounded transform -translate-x-[90%] text-sm z-2"
                 tabindex="0">
                 <div>
                     <h1 class="flex flex-wrap ">
