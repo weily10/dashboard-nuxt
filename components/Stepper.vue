@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 
 const active = ref([])
-const steps = ref([{ no: 1, desc: 'shit' }, { no: 2, desc: 'shit2' }, { no: 3, desc: 'shit3' }])
+const steps = ref([{ no: 1, desc: '第一步' }, { no: 2, desc: '第二步' }, { no: 3, desc: '第三步' }, { no: 4, desc: '第四步' }])
 
 
 function onclick(n) {
