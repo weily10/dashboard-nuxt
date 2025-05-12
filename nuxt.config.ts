@@ -2,6 +2,11 @@
 
 import tailwindcss from "@tailwindcss/vite"
 export default defineNuxtConfig({
+  nitro: {
+    prerender: {
+      ignore: ['/api/*', '/private/*', '/dashboard/*']
+    }
+  },
   app: {
     head: {
       link: [
