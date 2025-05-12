@@ -4,7 +4,9 @@ import tailwindcss from "@tailwindcss/vite"
 export default defineNuxtConfig({
   nitro: {
     prerender: {
-      ignore: ['/api/*', '/private/*', '/dashboard/*']
+      crawlLinks: false,
+      routes: [],
+      ignore: ['/**']
     }
   },
   app: {
@@ -19,7 +21,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   spaLoadingTemplate: false,
-  css:['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
 
   vite: {
     plugins: [
